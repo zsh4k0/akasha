@@ -1,0 +1,71 @@
+:root
+    --dark: #2B2B2B
+    --dark-light: #3B3B3B
+    --dark-light-2: #565656
+    --dark-light-3: #5E5E5E
+    --dark-light-4: #747474
+    --white: #FFFFFF
+    --light: #E1E2D9
+    --secondary-color: #776262
+    --primary-color: #787A69
+    --contrast: #dff7a6
+    //Font size
+    --text-size-regular: 1rem
+    --text-size-m: 2rem
+    --text-size-x: 4rem
+    --text-size-xm: 3rem
+    --text-size-xl: 7rem
+    //paddings
+
+@media screen and (max-width: 590px)
+    :root
+        --text-size-regular: 1rem
+        --text-size-m: 1.65rem
+        --text-size-x: 2rem
+        --text-size-xm: 3rem
+        --text-size-xl: 4rem
+
+@media screen and (max-width: 300px)
+    :root
+        --text-size-regular: 1rem
+        --text-size-m: 1.65rem
+        --text-size-x: 2rem
+        --text-size-xm: 3rem
+        --text-size-xl: 3rem
+*
+    margin: 0
+    padding: 0
+    border: 0
+    flex-wrap: wrap
+    font-family: "Alegreya Sans", sans-serif
+
+body
+    max-width: 100vw 
+    overflow-x: hidden
+
+.line
+    width: calc( 100vw - 6px - 2rem)
+    height: 2px
+    background: #ddd
+    box-sizing: border-box
+.break
+    margin: 4rem auto
+
+*::-webkit-scrollbar
+    width: 6px
+    height: 6px
+
+*::-webkit-scrollbar-track
+    background-color: var(--light)
+
+*::-webkit-scrollbar-thumb
+    background: var(--primary-color)
+    border-radius: 20px
+
+@import ./sass/header
+@import ./sass/background
+@import ./sass/middle-text
+@import ./sass/developent-of-experiences
+@import ./sass/vertical-target
+@import ./sass/carousel
+@import ./sass/text-center
