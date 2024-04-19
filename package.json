@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "sass:coaches": "sass ./pages/coaches/styles/style.sass ./pages/coaches/styles/style.css",
+    "sass:conectividad": "sass ./pages/conectividad/styles/style.sass ./pages/conectividad/styles/style.css",
+    "sass:naturaleza": "sass ./pages/naturaleza/styles/style.sass ./pages/naturaleza/styles/style.css",
+    "sass:portfolio": "sass ./pages/portfolio/styles/style.sass ./pages/portfolio/styles/style.css",
+    "sass:proyectos": "sass ./pages/proyectos/styles/style.sass ./pages/proyectos/styles/style.css",
+    "sass:tecnicas-historicas": "sass ./pages/tecnicas-historicas/styles/style.sass ./pages/tecnicas-historicas/styles/style.css",
+    "sass:wellness": "sass ./pages/wellness/styles/style.sass ./pages/wellness/styles/style.css"
+  }
+}
