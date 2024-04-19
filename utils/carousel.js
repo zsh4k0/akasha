@@ -1,4 +1,3 @@
-import './utils/header-stiky.js'
 const carousel = document.getElementById('carousel')
 const stepsControls = document.getElementById('steps-controls')
 const carouselItems = carousel.querySelectorAll('[carousel-item]')
