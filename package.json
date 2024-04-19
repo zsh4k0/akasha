@@ -6,6 +6,7 @@
     "sass:portfolio": "sass ./pages/portfolio/styles/style.sass ./pages/portfolio/styles/style.css",
     "sass:proyectos": "sass ./pages/proyectos/styles/style.sass ./pages/proyectos/styles/style.css",
     "sass:tecnicas-historicas": "sass ./pages/tecnicas-historicas/styles/style.sass ./pages/tecnicas-historicas/styles/style.css",
-    "sass:wellness": "sass ./pages/wellness/styles/style.sass ./pages/wellness/styles/style.css"
+    "sass:wellness": "sass ./pages/wellness/styles/style.sass ./pages/wellness/styles/style.css",
+    "sass": "npm run sass:coaches && npm run sass:conectividad && npm run sass:naturaleza && npm run sass:portfolio && npm run sass:proyectos && npm run sass:tecnicas-historicas && npm run sass:wellness"
   }
 }
