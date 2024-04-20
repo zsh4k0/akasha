@@ -91,6 +91,7 @@ class Carousel {
 	printImages() {
 		this.carouselItems.forEach((item) => {
 			const img = item.getAttribute('data-bg')
+			if (!img) return
 			item.style.backgroundImage = `url(${img})`
 			console.log(img.src)
 		})
