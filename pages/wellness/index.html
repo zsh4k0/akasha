@@ -1,9 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="../../styles/style.css" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<title>Wellness | Akasha</title>
+	</head>
+	<body>
+		<header>
+			<img
+				src="https://uploads-ssl.webflow.com/627b42abdc496942bb2b96ec/6336659f566e802c0e598ee3_Recurso%201-p-500.png"
+				alt="Akasha logo"
+				height="50"
+			/>
+			<input type="checkbox" name="btn" id="btn" hidden />
+			<label for="btn">
+				<span>≡</span>
+			</label>
+			<nav>
+				<a href="/">
+					<span>Inicio</span>
+				</a>
+				<a href="/pages/wellness/">
+					<span>Wellness</span>
+				</a>
+				<a href="/pages/conectividad/">
+					<span>Conectividad</span>
+				</a>
+				<a href="/pages//naturaleza/">
+					<span>Naturaleza</span>
+				</a>
+				<a href="/pages/proyectos/">
+					<span>Proyectos</span>
+				</a>
+				<a href="/pages//coaches/">
+					<span>Coaches</span>
+				</a>
+				<a href="/pages/tecnicas-historicas/">
+					<span>Técnicas Holisticas</span>
+				</a>
+				<a href="/pages/portfolio/">
+					<span>Portfolio</span>
+				</a>
+			</nav>
+		</header>
+		<section class="background" id="presentation-bg">
+			<video autoplay loop muted>
+				<source
+					src="https://video.wixstatic.com/video/d44296_9a689753f69c4ab1a450fcc32b02e2c2/1080p/mp4/file.mp4"
+				/>
+				<source
+					src="https://uploads-ssl.webflow.com/627b42abdc496942bb2b96ec/62abe25c8b450e275f079e2b_2000bitrate-transcode.webm"
+				/>
+			</video>
+			<img
+				height="122"
+				src="./assets/flor.svg"
+				loading="lazy"
+				sizes="(max-width: 479px) 100vw, 337px"
+				alt="Akasha logo"
+			/>
+			<div class="blur"></div>
+		</section>
+
+		<section class="carousel-container" id="text-carousel">
+			<div class="carousel" id="carousel">
+				<div carousel-item>
+					<p>
+						Akasha es un estilo de vida CONSCIENTE que nos permite
+						vivir en nuestro momento. presente… sentido… objetivo y
+						de donde venimos.
+					</p>
+				</div>
+
+				<div carousel-item>
+					<p>
+						"Descubrimos que el mejor lugar para crecer es donde el
+						equilibrio es palpable"
+					</p>
+				</div>
+				<div carousel-item>
+					<p>
+						"Creamos nuevas generaciones con un sentido humanista -
+						holistico".
+					</p>
+				</div>
+			</div>
+			<div class="controls">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					id="carousel-back"
+					viewBox="0 0 50 50"
+				>
+					<path
+						d="M35 3a2 2 0 0 0-1.4.6l-20 20a2 2 0 0 0 0 2.8l20 20a2 2 0 1 0 2.8-2.8L17.8 25 36.4 6.4A2 2 0 0 0 35 3z"
+						fill="currentColor"
+					/>
+				</svg>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					id="carousel-forward"
+					viewBox="0 0 50 50"
+				>
+					<path
+						d="M15 3a2 2 0 0 0-1.4 3.4L32.2 25 13.6 43.6a2 2 0 1 0 2.8 2.8l20-20a2 2 0 0 0 0-2.8l-20-20A2 2 0 0 0 15 3z"
+						fill="currentColor"
+					/>
+				</svg>
+			</div>
+			<div class="steps-container">
+				<div class="steps" id="steps-controls"></div>
+			</div>
+		</section>
+
+		<script src="/utils/header-stiky.js"></script>
+		<script src="/utils/carousel.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init()
+		</script>
+	</body>
 </html>
