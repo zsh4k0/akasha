@@ -9,7 +9,7 @@
   --secondary-color: #776262;
   --primary-color: #787A69;
   --contrast: #dff7a6;
-  --text-size-regular: 1rem;
+  --text-size-regular: 1.2rem;
   --text-size-m: 2rem;
   --text-size-x: 4rem;
   --text-size-xm: 3rem;
@@ -161,7 +161,7 @@ header nav a:hover::after {
   transform: scaleX(100%);
 }
 
-@media (orientation: portrait) {
+@media (max-width: 1122px) {
   header nav {
     position: fixed;
     flex-direction: column;
@@ -437,6 +437,158 @@ section.text-center h2 {
   font-weight: 400;
   font-size: var(--text-size-m);
   margin-bottom: var(--text-size-m);
+}
+
+#contact-container {
+  width: 100%;
+  display: flex;
+  padding: 44px 0;
+  justify-content: center;
+  background: #d9d9d4;
+}
+#contact-container #contact {
+  width: 100%;
+  max-width: 1368px;
+  justify-content: center;
+  background: #e9e9e5;
+  margin-bottom: 22px;
+  border-radius: 11px;
+}
+#contact-container #contact h2.title {
+  grid-column: 2;
+  width: 100%;
+  max-width: 1368px;
+  text-align: left;
+  padding: 22px;
+  font-size: var(--text-size-m);
+  box-sizing: border-box;
+  color: #444;
+}
+#contact-container .container {
+  width: 100%;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1fr 1fr;
+  background: #e9e9e5;
+  border-radius: 7px;
+  margin-bottom: 22px;
+}
+#contact-container .container .basic {
+  display: grid;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  padding: 22px;
+  grid-template-columns: 0.8fr 0.8fr;
+  grid-template-columns: 0.8fr 0.8fr;
+  gap: 11px 11px;
+}
+#contact-container .container .basic .item {
+  display: grid;
+  grid-template-rows: auto 2fr auto;
+  padding: 22px;
+  gap: 22px;
+  font-size: var(--text-size-regular);
+  color: #333;
+  background: #d9d9d4;
+  border-radius: 7px;
+}
+#contact-container .container .basic .item h2 {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+#contact-container .container .basic .item p {
+  font-size: var(--text-size-regular);
+}
+#contact-container .container .basic .item a {
+  color: #333;
+}
+#contact-container .container .basic .item .icon {
+  font-size: 35px;
+  color: #555;
+  transition: 0.35s color;
+  cursor: default;
+}
+#contact-container .container .basic .item .icon.--facebook:hover {
+  color: #1b1bd3;
+}
+#contact-container .container .basic .item .icon.--linkedin:hover {
+  color: #1b4cd3;
+}
+#contact-container .container .basic .item .icon.--x:hover {
+  color: #000;
+}
+#contact-container .container .basic .item .icon.--instagram:hover {
+  color: #e9202a;
+}
+#contact-container .container .basic .item .icon.--phone:hover, #contact-container .container .basic .item .icon.--mail:hover, #contact-container .container .basic .item .icon.--like:hover {
+  color: #2294ff;
+}
+#contact-container .container .basic .item .icon.--map:hover {
+  color: #3cc469;
+}
+#contact-container .container .basic .item .social {
+  display: flex;
+  gap: 22px;
+}
+#contact-container .container .basic .item .social .icon {
+  cursor: pointer;
+}
+#contact-container .container .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-container .container .form form, #contact-container .container .form form label {
+  display: flex;
+  flex-direction: column;
+}
+#contact-container .container .form form {
+  gap: 22px;
+  width: 100%;
+  max-width: 300px;
+  padding: 22px;
+  background: #d9d9d4;
+  border-radius: 7px;
+}
+#contact-container .container .form form h2 {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 11px;
+}
+#contact-container .container .form form label {
+  marging: 11px 0;
+}
+#contact-container .container .form form input {
+  padding: 11px;
+  outline: none;
+  background: #c2c2b7;
+}
+#contact-container .container .form form input[type=button] {
+  font-weight: 600;
+  font-size: var(--text-size-regular);
+  color: #433;
+}
+#contact-container .container .separator {
+  background: #000;
+}
+#contact-container iframe {
+  width: 100%;
+}
+
+@media screen and (max-width: 1144px) {
+  #contact-container .container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+  #contact-container .container .basic {
+    display: flex;
+  }
+  #contact-container .container .basic .item {
+    width: 170px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
