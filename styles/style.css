@@ -522,10 +522,10 @@ section.text-center h2 {
 #contact-container .container .basic .item .icon.--instagram:hover {
   color: #e9202a;
 }
-#contact-container .container .basic .item .icon.--phone:hover, #contact-container .container .basic .item .icon.--mail:hover, #contact-container .container .basic .item .icon.--like:hover {
+#contact-container .container .basic .item:hover .icon.--phone, #contact-container .container .basic .item:hover .icon.--mail, #contact-container .container .basic .item:hover .icon.--like {
   color: #2294ff;
 }
-#contact-container .container .basic .item .icon.--map:hover {
+#contact-container .container .basic .item:hover .icon.--map {
   color: #3cc469;
 }
 #contact-container .container .basic .item .social {
