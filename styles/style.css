@@ -646,6 +646,7 @@ section.text-center h2 {
   height: 100%;
 }
 #text-carousel [carousel-item] p {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1024px;
@@ -655,7 +656,7 @@ section.text-center h2 {
   transition-timing-function: ease-in;
   opacity: 1;
   padding: 44px;
-  font-size: var(--text-size-m);
+  font-size: var(--text-size-xm);
   color: #fff;
   height: 100%;
   box-sizing: border-box;
