@@ -7,10 +7,12 @@ section.background
     align-items: center
     box-sizing: border-box
     z-index: 2
-    video
+    video, .bg
         filter: brightness(.7)
+        position: relative
         height: 56.24vw
         max-width: 100vw
+        background: var(--primary-color)
 
     img
         position: absolute
@@ -25,13 +27,13 @@ section.background
         margin-top: -4.5rem
         transition-duration: .35s
         transition-property: background, backdrop-filter
-    &[sticky="true"] 
+    &[sticky="true"]
         .blur
-            backdrop-filter: blur(11px)   
-  
+            backdrop-filter: blur(11px)
+
 @media screen and (max-width: 300px)
     section.background
         top: calc( -56.25vw + 60px )
-        img 
+        img
             height: 50px
             object-fit: contain
