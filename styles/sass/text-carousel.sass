@@ -50,8 +50,14 @@
     //         opacity: 0
 
     [carousel-item]
+        display: flex
+        justify-content: center
         height: 100%
         p
+            flex-direction: column
+            justify-content: center
+            max-width: 1024px
+            gap: 22px
             transition-duration: 1s
             transition-property: opacity, transform
             transition-timing-function: ease-in
@@ -59,8 +65,6 @@
             padding: 44px
             font-size: var(--text-size-m)
             color: #fff
-            display: flex
-            align-items: center
             height: 100%
             box-sizing: border-box
 
