@@ -33,6 +33,7 @@
   height: 250px;
   margin: auto;
   border-radius: 5px;
+  object-fit: cover;
 }
 #cards-container .container .card h2, #cards-container .container .card p {
   color: var(--dark-light-4);
