@@ -1,0 +1,50 @@
+@import ../../../sass-components/cards-proyectos
+section.coaches-container
+    max-width: 1440px
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 44px
+
+    .container
+        display: flex
+        overflow: hidden
+        border-radius: 22px
+        img, .img, .text, .img_bg
+            width: 500px
+            height: 300px
+
+        .text
+            width: 500px
+            height: 300px
+            position: relative
+            padding: 22px
+            box-sizing: border-box
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            border-radius: 22px
+            overflow: hidden
+            margin-right: -22px
+            .img_bg
+                display: block
+                background: #0009
+                backdrop-filter: blur(11px)
+
+            .img, img, .img_bg
+                position: absolute
+                z-index: 1
+                left: 0
+                top: 0
+            h2, h3, p
+                position: relative
+                z-index: 1
+                color: #fff
+            h2
+                font-size: var(--text-size-m)
+            h3
+                font-weight: 600
+                font-size: var(--text-size-regular)
+            p
+                font-size: var(--text-size-regular)
