@@ -37,6 +37,7 @@
 }
 
 section.coaches-container {
+  background: #d9d9d4;
   max-width: 1440px;
   margin: auto;
   display: flex;
