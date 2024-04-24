@@ -1,23 +1,28 @@
 @import ../../../sass-components/cards-proyectos
 section.coaches-container
     background: #d9d9d4
-    max-width: 1440px
-    margin: auto
+    width: 100%
     display: flex
     justify-content: center
     align-items: center
+    box-sizing: border-box
     padding: 44px
 
     .container
         display: flex
         overflow: hidden
         border-radius: 22px
-        img, .img, .text, .img_bg
-            width: 500px
+        width: 100%
+        max-width: 1440px
+        box-sizing: border-box
+        justify-content: center
+        img
+            width: calc(50% + 22px)
             height: 300px
+            border-radius: 0 22px 22px 0
 
         .text
-            width: 500px
+            width: 50%
             height: 300px
             position: relative
             padding: 22px
@@ -34,7 +39,10 @@ section.coaches-container
                 backdrop-filter: blur(11px)
 
             .img, img, .img_bg
+                height: 300px
+                width: 100%
                 position: absolute
+                border-radius: 22px
                 z-index: 1
                 left: 0
                 top: 0

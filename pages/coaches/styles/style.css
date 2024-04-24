@@ -4,13 +4,15 @@
   align-items: center;
   width: 100%;
   background: var(--light);
+  padding: 44px;
+  box-sizing: border-box;
 }
 #cards-container .container {
+  max-width: 1440px;
   display: flex;
   box-sizing: border-box;
   justify-content: center;
-  padding: 44px;
-  gap: 44px;
+  gap: 20px;
 }
 #cards-container .container .card {
   border-radius: 11px;
@@ -38,24 +40,29 @@
 
 section.coaches-container {
   background: #d9d9d4;
-  max-width: 1440px;
-  margin: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   padding: 44px;
 }
 section.coaches-container .container {
   display: flex;
   overflow: hidden;
   border-radius: 22px;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  justify-content: center;
 }
-section.coaches-container .container img, section.coaches-container .container .img, section.coaches-container .container .text, section.coaches-container .container .img_bg {
-  width: 500px;
+section.coaches-container .container img {
+  width: calc(50% + 22px);
   height: 300px;
+  border-radius: 0 22px 22px 0;
 }
 section.coaches-container .container .text {
-  width: 500px;
+  width: 50%;
   height: 300px;
   position: relative;
   padding: 22px;
@@ -73,7 +80,10 @@ section.coaches-container .container .text .img_bg {
   backdrop-filter: blur(11px);
 }
 section.coaches-container .container .text .img, section.coaches-container .container .text img, section.coaches-container .container .text .img_bg {
+  height: 300px;
+  width: 100%;
   position: absolute;
+  border-radius: 22px;
   z-index: 1;
   left: 0;
   top: 0;
