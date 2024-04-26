@@ -223,13 +223,29 @@ section.background video, section.background .bg {
   position: relative;
   height: 56.24vw;
   max-width: 100vw;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 0;
   background: var(--primary-color);
 }
-section.background img {
+section.background img, section.background .content-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+section.background .content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -100%);
+  gap: 22px;
+  color: var(--light);
+}
+section.background .content-center img {
+  position: unset;
+  transform: none;
 }
 section.background .blur {
   height: 4.5rem;
@@ -565,9 +581,6 @@ section.text-center h2 {
   display: block;
   margin-bottom: 11px;
 }
-#contact-container .container .form form label {
-  marging: 11px 0;
-}
 #contact-container .container .form form input {
   padding: 11px;
   outline: none;
@@ -595,7 +608,7 @@ section.text-center h2 {
     display: flex;
   }
   #contact-container .container .basic .item {
-    width: 170px;
+    width: 222px;
   }
 }
 #text-carousel {
