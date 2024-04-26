@@ -49,6 +49,7 @@ section.coaches-container {
   padding: 44px;
 }
 section.coaches-container .container {
+  flex-wrap: wrap-reverse;
   display: flex;
   overflow: hidden;
   border-radius: 22px;
@@ -103,6 +104,21 @@ section.coaches-container .container .text h3 {
 }
 section.coaches-container .container .text p {
   font-size: var(--text-size-regular);
+}
+
+@media screen and (max-width: 768px) {
+  section.coaches-container .container {
+    gap: 0;
+  }
+  section.coaches-container .container .text, section.coaches-container .container img {
+    border-radius: 11px;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  section.coaches-container .container .text {
+    margin-top: -22px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
