@@ -10,13 +10,15 @@
   align-items: center;
   width: 100%;
   background: var(--light);
+  padding: 44px;
+  box-sizing: border-box;
 }
 #cards-container .container {
+  max-width: 1440px;
   display: flex;
   box-sizing: border-box;
   justify-content: center;
-  padding: 44px;
-  gap: 44px;
+  gap: 20px;
 }
 #cards-container .container .card {
   border-radius: 11px;
@@ -28,7 +30,7 @@
   background: #fff;
   gap: 11px;
   width: 344px;
-  height: 400px;
+  height: 440px;
 }
 #cards-container .container .card img {
   flex: 1;
@@ -37,6 +39,7 @@
   height: 250px;
   margin: auto;
   border-radius: 5px;
+  object-fit: cover;
 }
 #cards-container .container .card h2, #cards-container .container .card p {
   color: var(--dark-light-4);
