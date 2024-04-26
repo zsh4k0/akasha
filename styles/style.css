@@ -565,9 +565,6 @@ section.text-center h2 {
   display: block;
   margin-bottom: 11px;
 }
-#contact-container .container .form form label {
-  marging: 11px 0;
-}
 #contact-container .container .form form input {
   padding: 11px;
   outline: none;
@@ -595,7 +592,7 @@ section.text-center h2 {
     display: flex;
   }
   #contact-container .container .basic .item {
-    width: 170px;
+    width: 222px;
   }
 }
 #text-carousel {
