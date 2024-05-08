@@ -21,7 +21,7 @@
     --text-size-regular: 1rem;
     --text-size-m: 1.65rem;
     --text-size-x: 2rem;
-    --text-size-xm: 3rem;
+    --text-size-xm: 2.2rem;
     --text-size-xl: 3.5rem;
   }
 }
@@ -30,7 +30,7 @@
     --text-size-regular: 1rem;
     --text-size-m: 1.65rem;
     --text-size-x: 2rem;
-    --text-size-xm: 3rem;
+    --text-size-xm: 2.2rem;
     --text-size-xl: 3rem;
   }
 }
@@ -247,6 +247,9 @@ section.background .content-center img {
   position: unset;
   transform: none;
 }
+section.background .content-center h2 {
+  font-size: var(--text-size-xm);
+}
 section.background .blur {
   height: 4.5rem;
   width: 100vw;
@@ -383,6 +386,13 @@ section.carousel-container .carousel [carousel-item] {
   width: calc(100vw - 6px);
   height: 100%;
   box-sizing: border-box;
+}
+section.carousel-container .carousel [carousel-item] p span {
+  display: block;
+  width: 100%;
+}
+section.carousel-container .carousel [carousel-item] p p {
+  flex: 1;
 }
 section.carousel-container .carousel [carousel-item].img {
   background-size: contain;
